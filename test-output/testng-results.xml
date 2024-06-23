@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-23T15:28:49 IST" name="Default suite" finished-at="2024-06-23T15:34:13 IST" duration-ms="324099">
+  <suite started-at="2024-06-23T18:13:40 IST" name="Default suite" finished-at="2024-06-23T18:13:48 IST" duration-ms="7856">
     <groups>
     </groups>
-    <test started-at="2024-06-23T15:28:49 IST" name="Default test" finished-at="2024-06-23T15:34:13 IST" duration-ms="324099">
+    <test started-at="2024-06-23T18:13:40 IST" name="Default test" finished-at="2024-06-23T18:13:48 IST" duration-ms="7856">
       <class name="com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@36bc55de]" started-at="2024-06-23T15:28:49 IST" name="setup" finished-at="2024-06-23T15:34:06 IST" duration-ms="316952" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@16d04d3d]" started-at="2024-06-23T18:13:40 IST" name="setup" finished-at="2024-06-23T18:13:45 IST" duration-ms="4947" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_OrangeHRM_Login()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@36bc55de]" started-at="2024-06-23T15:34:06 IST" name="verify_OrangeHRM_Login" finished-at="2024-06-23T15:34:10 IST" duration-ms="3938" status="PASS">
+        <test-method signature="verify_OrangeHRM_Login()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@16d04d3d]" started-at="2024-06-23T18:13:45 IST" name="verify_OrangeHRM_Login" finished-at="2024-06-23T18:13:48 IST" duration-ms="2241" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_OrangeHRM_Login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@36bc55de]" started-at="2024-06-23T15:34:10 IST" name="tearDown" finished-at="2024-06-23T15:34:13 IST" duration-ms="3123" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@16d04d3d]" started-at="2024-06-23T18:13:48 IST" name="tearDown" finished-at="2024-06-23T18:13:48 IST" duration-ms="638" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
