@@ -11,13 +11,13 @@ import org.openqa.selenium.WebDriver;
 public class Takescreenshot {
 	
 	
-	public WebDriver _driver;
+	public static WebDriver _driver;
 	
 	public Takescreenshot(WebDriver tdriver) {
-		this._driver = tdriver;
+		Takescreenshot._driver = tdriver;
 	}
 	
-	public void getScreenShot() throws IOException{
+	public static void getScreenShot() throws IOException{
 		
 		TakesScreenshot takescreenshot = (TakesScreenshot)_driver;
 		

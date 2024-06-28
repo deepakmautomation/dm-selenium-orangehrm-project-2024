@@ -14,6 +14,9 @@ public class OrangeHRM_loginPage  extends TestBase{
 	By username = By.name("username");
 	By password = By.name("password");
 	By loginBtn = By.xpath("//button[@type='submit']");
+	By invalidcreds = By.xpath("//div[@class='orangehrm-login-form']/descendant::p[text()='Invalid credentials']");
+	By usernameRequiredWarningtxt  = By.xpath("//div[@class='oxd-form-row'][1]/descendant::span");
+	By passwordRequiredWarningtxt = By.xpath("//div[@class='oxd-form-row'][2]/descendant::span");
 	
 	public OrangeHRM_loginPage(WebDriver ldriver) throws IOException {
 		super();
@@ -25,6 +28,18 @@ public class OrangeHRM_loginPage  extends TestBase{
 		_driver.findElement(password).sendKeys(pwd);
 		_driver.findElement(loginBtn).click();
 		return new OrangeHRM_dashboardPage(_driver);
+	}
+	
+	public String getInvalidCredentialsWarningText() {
+		 return _driver.findElement(invalidcreds).getText();
+	}
+	
+	public String getUserNameRequiredWarning() {
+		return _driver.findElement(usernameRequiredWarningtxt).getText();
+	}
+	
+	public String getPasswordRequiredWarning() {
+		return _driver.findElement(passwordRequiredWarningtxt).getText();
 	}
 
 }
