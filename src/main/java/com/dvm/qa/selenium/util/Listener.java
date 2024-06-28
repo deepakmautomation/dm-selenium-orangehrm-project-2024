@@ -7,18 +7,23 @@ import org.testng.ITestResult;
 
 public class Listener implements ITestListener  {
 
+	
+
 	public void onFinish(ITestContext context) {
 		System.out.println("Test Finished..");
 	}
+
 
 	public void onTestStart(ITestResult result) {
 
 		System.out.println(result.getMethod().getMethodName()+ " Test Started");
 	}
 
+
 	public void onTestSuccess(ITestResult result) {
 		System.out.println("Test Success..");
 	}
+
 
 	public void onTestFailure(ITestResult result) {
 		System.out.println("Test Failed..");
@@ -28,6 +33,7 @@ public class Listener implements ITestListener  {
 			e.printStackTrace();
 		}
 	}
+
 
 	public void onTestSkipped(ITestResult result) {
 		System.out.println("Test Skipped..");	
