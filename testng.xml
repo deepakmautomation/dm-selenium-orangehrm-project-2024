@@ -7,6 +7,7 @@
   <test name="Test">
     <classes>
       <class name="com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest"/>
+      <class name="com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest"></class>
     </classes>
   </test> 
 </suite> 
