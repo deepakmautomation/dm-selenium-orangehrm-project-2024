@@ -4,6 +4,8 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 import com.dvm.qa.selenium.testbase.TestBase;
 
@@ -18,6 +20,7 @@ public class OrangeHRM_loginPage  extends TestBase{
 	By usernameRequiredWarningtxt  = By.xpath("//div[@class='oxd-form-row'][1]/descendant::span");
 	By passwordRequiredWarningtxt = By.xpath("//div[@class='oxd-form-row'][2]/descendant::span");
 	By forgotPasswordLink = By.xpath("//div[@class='orangehrm-login-forgot']/p");
+
 
 	public OrangeHRM_loginPage(WebDriver ldriver) throws IOException {
 		super();

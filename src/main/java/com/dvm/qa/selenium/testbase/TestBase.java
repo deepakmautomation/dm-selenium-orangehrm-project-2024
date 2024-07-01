@@ -21,7 +21,7 @@ public class TestBase {
 
 		prop = new Properties();
 
-		File f = new File(System.getProperty("user.dir")+"\\src\\main\\java\\com\\dvm\\qa\\selenium\\config\\config.properties");	
+		File f = new File(System.getProperty("user.dir")+"/src/main/java/com/dvm/qa/selenium/config/config.properties");	
 
 		FileInputStream fis = new FileInputStream(f);
 		
