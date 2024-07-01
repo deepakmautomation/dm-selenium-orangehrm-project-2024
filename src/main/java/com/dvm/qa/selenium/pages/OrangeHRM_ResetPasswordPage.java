@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 
 public class OrangeHRM_ResetPasswordPage {
 	
-	WebDriver _driver;
+	 private WebDriver _driver;
 	
 	By resetPasswordheader = By.xpath("//div[@class='orangehrm-card-container']/child::form/child::h6");
 	
