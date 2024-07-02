@@ -10,11 +10,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.Parameters;
 
 public class TestBase {
 
 	public WebDriver _driver;
-	
+
 	public static Properties prop;
 
 	public TestBase() throws IOException  {
@@ -24,24 +25,23 @@ public class TestBase {
 		File f = new File(System.getProperty("user.dir")+"/src/main/java/com/dvm/qa/selenium/config/config.properties");	
 
 		FileInputStream fis = new FileInputStream(f);
-		
+
 		prop.load(fis);
 	}
 
-	public WebDriver launchBrowser() {
-		 String browser = prop.getProperty("browser");
-		if(browser.equalsIgnoreCase("chrome")) {
+	public WebDriver launchBrowser(String browserName) {
+		if(browserName.equalsIgnoreCase("chrome")) {
 			_driver = new ChromeDriver();
-		}else if(browser.equalsIgnoreCase("firefox")) {
+		}else if(browserName.equalsIgnoreCase("firefox")) {
 			_driver = new FirefoxDriver();
-		}else if(browser.equalsIgnoreCase("edge")) {
+		}else if(browserName.equalsIgnoreCase("edge")) {
 			_driver = new EdgeDriver();
 		}
 		_driver.manage().window().maximize();
 		_driver.get(prop.getProperty("url"));
 		_driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		_driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
-		
+
 		return _driver;
 	}
 

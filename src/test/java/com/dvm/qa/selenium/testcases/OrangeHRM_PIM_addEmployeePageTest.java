@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import com.dvm.qa.selenium.pages.OrangeHRM_PIMPage;
@@ -25,10 +26,11 @@ public class OrangeHRM_PIM_addEmployeePageTest {
 	OrangeHRM_PIMPage pim;
 	OrangeHRM_PIM_viewPersonalDetailsPage personalDetails;
 
+	@Parameters({"browserName"})
 	@BeforeMethod
-	public void setUp() throws IOException {
+	public void setUp(String browserName) throws IOException {
 		testBase = new TestBase();
-		_driver =  testBase.launchBrowser();
+		_driver =  testBase.launchBrowser(browserName);
 		loginPage = new OrangeHRM_loginPage(_driver);
 	}
 
