@@ -1,6 +1,7 @@
 package com.dvm.qa.selenium.testcases;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -27,7 +28,7 @@ public class OrangeHRM_loginPageTest {
 
 	@Parameters({"browserName"})
 	@BeforeMethod
-	public void setup(String browserName) throws IOException {
+	public void setup(String browserName) throws IOException, URISyntaxException {
 		testbase = new TestBase();
 		_driver = testbase.launchBrowser(browserName);
 		loginpage = new OrangeHRM_loginPage(_driver);

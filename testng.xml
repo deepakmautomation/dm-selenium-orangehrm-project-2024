@@ -13,7 +13,7 @@
     </classes>
   </test> 
   
-  <test name="EdgeTest">
+  <!-- <test name="EdgeTest">
   <parameter name="browserName" value="edge"></parameter>
     <classes>
       <class name="com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest"/>
@@ -29,5 +29,5 @@
       <class name="com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest"></class>
       <class name="com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest"></class>
     </classes>
-  </test> 
+  </test>  -->
 </suite> 

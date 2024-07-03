@@ -1,6 +1,7 @@
 package com.dvm.qa.selenium.testcases;
 
 import java.io.IOException;
+import java.net.URISyntaxException;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -22,7 +23,7 @@ public class OrangeHRM_ResetPasswordPageTest {
 
 	@Parameters({"browserName"})
 	@BeforeMethod
-	public void setUp(String browserName) throws IOException {
+	public void setUp(String browserName) throws IOException, URISyntaxException {
 		testBase = new TestBase();
 		_driver = testBase.launchBrowser(browserName);
 		loginPage = new OrangeHRM_loginPage(_driver);

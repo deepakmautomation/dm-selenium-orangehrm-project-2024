@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">3 tests</span>
+                    <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -118,7 +118,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest" class="method navigator-link" hash-for-method="verify_Orange_HRM_Login_with_Invalid_Credentials(Jorgn, admin@123)">verify_Orange_HRM_Login_with_Invalid_Credentials(Jorgn, admin@123)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest" class="method navigator-link" hash-for-method="verify_Orange_HRM_Login_with_Invalid_Credentials(Admin, 12345)">verify_Orange_HRM_Login_with_Invalid_Credentials(Admin, 12345)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -128,7 +128,7 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest" class="method navigator-link" hash-for-method="verify_Orange_HRM_Login_with_Invalid_Credentials(Admin, 12345)">verify_Orange_HRM_Login_with_Invalid_Credentials(Admin, 12345)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest" class="method navigator-link" hash-for-method="verify_Orange_HRM_Login_with_Invalid_Credentials(Jorgn, admin@123)">verify_Orange_HRM_Login_with_Invalid_Credentials(Jorgn, admin@123)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -188,10 +188,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verify_Orange_HRM_Login_with_Invalid_Credentials(Jorgn, admin@123)">
-                  </a> <!-- verify_Orange_HRM_Login_with_Invalid_Credentials(Jorgn, admin@123) -->
+                  <a name="verify_Orange_HRM_Login_with_Invalid_Credentials(Admin, 12345)">
+                  </a> <!-- verify_Orange_HRM_Login_with_Invalid_Credentials(Admin, 12345) -->
                   <span class="method-name">verify_Orange_HRM_Login_with_Invalid_Credentials</span>
-                  <span class="parameters">(Jorgn,admin@123)</span>
+                  <span class="parameters">(Admin,12345)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -204,10 +204,10 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verify_Orange_HRM_Login_with_Invalid_Credentials(Admin, 12345)">
-                  </a> <!-- verify_Orange_HRM_Login_with_Invalid_Credentials(Admin, 12345) -->
+                  <a name="verify_Orange_HRM_Login_with_Invalid_Credentials(Jorgn, admin@123)">
+                  </a> <!-- verify_Orange_HRM_Login_with_Invalid_Credentials(Jorgn, admin@123) -->
                   <span class="method-name">verify_Orange_HRM_Login_with_Invalid_Credentials</span>
-                  <span class="parameters">(Admin,12345)</span>
+                  <span class="parameters">(Jorgn,admin@123)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -233,22 +233,6 @@
       &lt;class name=&quot;com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;EdgeTest&quot;&gt;
-    &lt;parameter name=&quot;browserName&quot; value=&quot;edge&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest&quot;/&gt;
-      &lt;class name=&quot;com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest&quot;/&gt;
-      &lt;class name=&quot;com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- EdgeTest --&gt;
-  &lt;test thread-count=&quot;5&quot; parallel=&quot;tests&quot; name=&quot;FirefoxTest&quot;&gt;
-    &lt;parameter name=&quot;browserName&quot; value=&quot;firefox&quot;/&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest&quot;/&gt;
-      &lt;class name=&quot;com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest&quot;/&gt;
-      &lt;class name=&quot;com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- FirefoxTest --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -261,12 +245,6 @@
             <ul>
               <li>
                 <span class="test-name">ChromeTest (3 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">EdgeTest (3 classes)</span>
-              </li>
-              <li>
-                <span class="test-name">FirefoxTest (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -296,32 +274,32 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'verifyAdminCanAddEmployee')
 data.setCell(0, 2, 'com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest')
-data.setCell(0, 3, 26638);
+data.setCell(0, 3, 14180);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verify_Orange_HRM_Login_with_Invalid_Credentials')
+data.setCell(1, 1, 'verify_OrangeHRM_Login_with_valid_credentials')
 data.setCell(1, 2, 'com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest')
-data.setCell(1, 3, 7907);
+data.setCell(1, 3, 3311);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'verify_Orange_HRM_Login_with_Invalid_Credentials')
 data.setCell(2, 2, 'com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest')
-data.setCell(2, 3, 5933);
+data.setCell(2, 3, 3158);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verify_OrangeHRM_Login_with_valid_credentials')
+data.setCell(3, 1, 'verify_Orange_HRM_Login_with_Invalid_Credentials')
 data.setCell(3, 2, 'com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest')
-data.setCell(3, 3, 5224);
+data.setCell(3, 3, 2651);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'verify_Orange_HRM_Login_with_Invalid_Credentials')
 data.setCell(4, 2, 'com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest')
-data.setCell(4, 3, 4372);
+data.setCell(4, 3, 2224);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'verifyResetPasswordHeader')
 data.setCell(5, 2, 'com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest')
-data.setCell(5, 3, 3517);
+data.setCell(5, 3, 1235);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -352,241 +330,80 @@ return data;
                 <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(firefox)</span>
-                <span class="method-start">0 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(edge)</span>
-                <span class="method-start">1 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_OrangeHRM_Login_with_valid_credentials</span>
-                <span class="method-start">8246 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verify_OrangeHRM_Login_with_valid_credentials</span>
-                <span class="method-start">11119 ms</span>
+                <span class="method-start">9770 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16359 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">17694 ms</span>
+                <span class="method-start">13081 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">21982 ms</span>
+                <span class="method-start">13402 ms</span>
               </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(edge)</span>
-                <span class="method-start">22184 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verify_OrangeHRM_Login_with_valid_credentials</span>
-                <span class="method-start">22407 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">32964 ms</span>
-              </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">verify_Orange_HRM_Login_with_Invalid_Credentials(Jorgn, admin@123)</span>
-                <span class="method-start">34156 ms</span>
+                <span class="method-start">19833 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verify_Orange_HRM_Login_with_Invalid_Credentials(Jorgn, admin@123)</span>
-                <span class="method-start">34198 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(firefox)</span>
-                <span class="method-start">38078 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38190 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">38577 ms</span>
+                <span class="method-start">22059 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">40226 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(edge)</span>
-                <span class="method-start">41144 ms</span>
+                <span class="method-start">22191 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_Orange_HRM_Login_with_Invalid_Credentials(Jorgn, Jorgn@123)</span>
-                <span class="method-start">49203 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">verify_Orange_HRM_Login_with_Invalid_Credentials(Jorgn, Jorgn@123)</span>
-                <span class="method-start">53620 ms</span>
+                <span class="method-start">28769 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">57114 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verify_Orange_HRM_Login_with_Invalid_Credentials(Jorgn, admin@123)</span>
-                <span class="method-start">57380 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">57686 ms</span>
+                <span class="method-start">31420 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setup(chrome)</span>
-                <span class="method-start">59446 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(edge)</span>
-                <span class="method-start">60197 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">60593 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="test-method">
-                <span class="method-name">verify_Orange_HRM_Login_with_Invalid_Credentials(Admin, 12345)</span>
-                <span class="method-start">66092 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(firefox)</span>
-                <span class="method-start">67917 ms</span>
+                <span class="method-start">31581 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verify_Orange_HRM_Login_with_Invalid_Credentials(Admin, 12345)</span>
-                <span class="method-start">71487 ms</span>
+                <span class="method-start">41341 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">72025 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">74934 ms</span>
+                <span class="method-start">44515 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(edge)</span>
-                <span class="method-start">75341 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">76365 ms</span>
+                <span class="method-start">44792 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyResetPasswordHeader</span>
-                <span class="method-start">85998 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verify_Orange_HRM_Login_with_Invalid_Credentials(Jorgn, Jorgn@123)</span>
-                <span class="method-start">86686 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyResetPasswordHeader</span>
-                <span class="method-start">89246 ms</span>
+                <span class="method-start">50761 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">89523 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">90826 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">91406 ms</span>
+                <span class="method-start">52000 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(edge)</span>
-                <span class="method-start">92994 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="configuration-method before">
                 <span class="method-name">setUp(chrome)</span>
-                <span class="method-start">93308 ms</span>
+                <span class="method-start">52111 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setup(firefox)</span>
-                <span class="method-start">93897 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyAdminCanAddEmployee</span>
-                <span class="method-start">99723 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verify_Orange_HRM_Login_with_Invalid_Credentials(Admin, 12345)</span>
-                <span class="method-start">115784 ms</span>
+                <span class="method-start">57688 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">120194 ms</span>
+                <span class="method-start">71872 ms</span>
               </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(firefox)</span>
-                <span class="method-start">125005 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">126363 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">verifyResetPasswordHeader</span>
-                <span class="method-start">141224 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">143607 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(firefox)</span>
-                <span class="method-start">146034 ms</span>
-              </div> <!-- configuration-method before -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
