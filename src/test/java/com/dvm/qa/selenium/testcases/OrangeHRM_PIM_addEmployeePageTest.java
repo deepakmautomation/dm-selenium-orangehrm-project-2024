@@ -1,5 +1,6 @@
 package com.dvm.qa.selenium.testcases;
 
+import java.awt.AWTException;
 import java.io.IOException;
 import java.net.URISyntaxException;
 
@@ -36,14 +37,14 @@ public class OrangeHRM_PIM_addEmployeePageTest {
 	}
 
 	@Test
-	public void verifyAdminCanAddEmployee() throws InterruptedException{
+	public void verifyAdminCanAddEmployee() throws InterruptedException, AWTException{
 		dashboard = loginPage.login(TestBase.prop.getProperty("username"),TestBase.prop.getProperty("password"));
 		pim = dashboard.clickOnPIM();
 		Assert.assertEquals(pim.getPIMHeaderText(), "PIM");
 		addemployee =  pim.clickOnAddEmployee();
-		personalDetails =  addemployee.enterEmployeeFullName("Jargon3", "S", "Smith3");
+		personalDetails =  addemployee.enterEmployeeFullName("Jargon7", "S", "Smith7");
 		Thread.sleep(4000);
-		Assert.assertEquals(personalDetails.getEmployeeName(), "Jargon3 Smith3");
+		Assert.assertEquals(personalDetails.getEmployeeName(), "Jargon7 Smith7");
 		//System.out.println("You Employee ID is: "+ employeeID);// unable to get the Emp ID
 		dashboard.clickOnLogout();
 	}

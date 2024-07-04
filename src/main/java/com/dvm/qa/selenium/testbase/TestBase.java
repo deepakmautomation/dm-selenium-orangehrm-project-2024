@@ -16,13 +16,13 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.LocalFileDetector;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.testng.annotations.Parameters;
 
 public class TestBase {
 
-	public WebDriver _driver;
+	//public WebDriver _driver;
+	private RemoteWebDriver _driver;
 
 	public static Properties prop;
 	
@@ -59,7 +59,8 @@ public class TestBase {
 				ltOptions.put("w3c", true);
 				ltOptions.put("plugin", "java-java");
 				browserOptions.setCapability("LT:Options", ltOptions);
-				_driver = new RemoteWebDriver(url, browserOptions);
+				_driver = new RemoteWebDriver(url, browserOptions);	
+				_driver.setFileDetector(new LocalFileDetector());
 			}
 					
 		}else {
