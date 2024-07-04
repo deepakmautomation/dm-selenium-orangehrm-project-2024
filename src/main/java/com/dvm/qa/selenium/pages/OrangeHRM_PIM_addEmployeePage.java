@@ -3,6 +3,7 @@ package com.dvm.qa.selenium.pages;
 import java.awt.AWTException;
 import java.awt.Robot;
 import java.awt.Toolkit;
+import java.awt.datatransfer.Clipboard;
 import java.awt.datatransfer.StringSelection;
 import java.awt.event.KeyEvent;
 import java.io.File;
@@ -51,8 +52,10 @@ public class OrangeHRM_PIM_addEmployeePage {
 		String imagePath = f.getAbsolutePath();
 
 		StringSelection systemClipboard = new StringSelection(imagePath);
+		
+		
 
-		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(systemClipboard, null);
+		Toolkit.getDefaultToolkit().getSystemClipboard().setContents(systemClipboard, null); // we can also use Clipboard class
 
 		try {
 			Robot r = new Robot();

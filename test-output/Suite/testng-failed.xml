@@ -7,13 +7,6 @@
   <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
     <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest">
-        <methods>
-          <include name="tearDown"/>
-          <include name="verifyResetPasswordHeader"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest -->
       <class name="com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest">
         <methods>
           <include name="tearDown"/>
@@ -21,6 +14,13 @@
           <include name="verifyAdminCanAddEmployee"/>
         </methods>
       </class> <!-- com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest -->
+      <class name="com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyResetPasswordHeader"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest -->
       <class name="com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest">
         <methods>
           <include name="tearDown"/>

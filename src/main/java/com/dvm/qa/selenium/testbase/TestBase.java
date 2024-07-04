@@ -21,13 +21,13 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class TestBase {
 
-	//public WebDriver _driver;
+	//private WebDriver _driver;
 	private RemoteWebDriver _driver;
 
 	public static Properties prop;
-	
+
 	private String username = "deepakmautomation";
-	private String accesskey = "h3iAWJPcUJ83qgWvBpzVtdI36fcnWY5P87RUFYcV5CUmJTDB2b";
+	private String accesskey = "UZ6pvFLx448XrjB1V2ixZjnnjY2pMxZT0sjMLStgze52zqix9Y";
 
 	public TestBase() throws IOException  {
 
@@ -41,28 +41,34 @@ public class TestBase {
 	}
 
 	public WebDriver launchBrowser(String browserName) throws URISyntaxException, MalformedURLException {
-		
-		URI uri = new URI("https://"+username+":"+accesskey+"@hub.lambdatest.com/wd/hub");
-		URL url = uri.toURL();
 
 		if(prop.getProperty("remote").equals("true")) {
+			try {
+				
+				URI uri = new URI("https://"+username+":"+accesskey+"@hub.lambdatest.com/wd/hub");
+				URL url = uri.toURL();
+				if(browserName.equalsIgnoreCase("chrome")) {
+					ChromeOptions browserOptions = new ChromeOptions();
+					browserOptions.setPlatformName("Windows 10");
+					browserOptions.setBrowserVersion("126");
+					HashMap<String, Object> ltOptions = new HashMap<String, Object>();
+					ltOptions.put("video", true);
+					ltOptions.put("build", "Build-upload-image-dm-selenium-orangehrm-project-2024");
+					ltOptions.put("project", "dm-selenium-orangehrm-project-2024");
+					ltOptions.put("name", "Test-dm-selenium-orangehrm-project-2024");
+					ltOptions.put("w3c", true);
+					ltOptions.put("plugin", "java-java");
+					browserOptions.setCapability("LT:Options", ltOptions);
+					_driver = new RemoteWebDriver(url, browserOptions);	
+					_driver.setFileDetector(new LocalFileDetector());
+
+				}
+				
+			}catch(Exception e){
 			
-			if(browserName.equalsIgnoreCase("chrome")) {
-				ChromeOptions browserOptions = new ChromeOptions();
-				browserOptions.setPlatformName("Windows 10");
-				browserOptions.setBrowserVersion("126");
-				HashMap<String, Object> ltOptions = new HashMap<String, Object>();
-				ltOptions.put("video", true);
-				ltOptions.put("build", "Build-dm-selenium-orangehrm-project-2024");
-				ltOptions.put("project", "dm-selenium-orangehrm-project-2024");
-				ltOptions.put("name", "Test-dm-selenium-orangehrm-project-2024");
-				ltOptions.put("w3c", true);
-				ltOptions.put("plugin", "java-java");
-				browserOptions.setCapability("LT:Options", ltOptions);
-				_driver = new RemoteWebDriver(url, browserOptions);	
-				_driver.setFileDetector(new LocalFileDetector());
+				System.out.println("Invalid username or accesskey!");
 			}
-					
+
 		}else {
 
 			if(browserName.equalsIgnoreCase("chrome")) {
@@ -80,5 +86,6 @@ public class TestBase {
 
 		return _driver;
 	}
+	
 
 }
