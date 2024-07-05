@@ -42,16 +42,14 @@ public class OrangeHRM_PIM_addEmployeePageTest {
 		pim = dashboard.clickOnPIM();
 		Assert.assertEquals(pim.getPIMHeaderText(), "PIM");
 		addemployee =  pim.clickOnAddEmployee();
-		personalDetails =  addemployee.enterEmployeeFullName("Jargon7", "S", "Smith7");
-		Thread.sleep(4000);
-		Assert.assertEquals(personalDetails.getEmployeeName(), "Jargon7 Smith7");
-		//System.out.println("You Employee ID is: "+ employeeID);// unable to get the Emp ID
+		personalDetails =  addemployee.enterEmployeeFullName("John17", "S", "Smith1", "John17", "Admin@123", "417");
+		Assert.assertEquals(personalDetails.getEmployeeName(), "John17 Smith1");
 		dashboard.clickOnLogout();
 	}
 
 
 	@AfterMethod
-	public void tearDown() {
+	public void tearDown() throws InterruptedException {
 		_driver.quit();
 	}
 
