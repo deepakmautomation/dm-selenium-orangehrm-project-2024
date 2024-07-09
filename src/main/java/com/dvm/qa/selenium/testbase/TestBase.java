@@ -44,7 +44,7 @@ public class TestBase {
 
 		if(prop.getProperty("remote").equals("true")) {
 			try {
-				
+
 				URI uri = new URI("https://"+username+":"+accesskey+"@hub.lambdatest.com/wd/hub");
 				URL url = uri.toURL();
 				if(browserName.equalsIgnoreCase("chrome")) {
@@ -63,9 +63,9 @@ public class TestBase {
 					_driver.setFileDetector(new LocalFileDetector());
 
 				}
-				
+
 			}catch(Exception e){
-			
+
 				System.out.println("Invalid username or accesskey!");
 			}
 
@@ -83,7 +83,7 @@ public class TestBase {
 		_driver.get(prop.getProperty("url"));
 		_driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(60));
 		_driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(60));
-
+		WebdriverMgr.set_driver(_driver);
 		return _driver;
 	}
 

@@ -8,18 +8,11 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
-public class Takescreenshot {
+public class Takescreenshot {	
 	
-	
-	public static WebDriver _driver;
-	
-	public Takescreenshot(WebDriver tdriver) {
-		Takescreenshot._driver = tdriver;
-	}
-	
-	public static void getScreenShot() throws IOException{
+	public void getScreenShot(WebDriver driver) throws IOException{
 		
-		TakesScreenshot takescreenshot = (TakesScreenshot)_driver;
+		TakesScreenshot takescreenshot = (TakesScreenshot)driver;
 		
 		File src = takescreenshot.getScreenshotAs(OutputType.FILE);
 		

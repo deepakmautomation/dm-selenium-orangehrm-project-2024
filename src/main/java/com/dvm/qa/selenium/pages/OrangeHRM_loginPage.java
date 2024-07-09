@@ -1,11 +1,14 @@
 package com.dvm.qa.selenium.pages;
 
 import java.io.IOException;
+import java.time.Duration;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.dvm.qa.selenium.testbase.TestBase;
 
@@ -20,6 +23,7 @@ public class OrangeHRM_loginPage  extends TestBase{
 	By usernameRequiredWarningtxt  = By.xpath("//div[@class='oxd-form-row'][1]/descendant::span");
 	By passwordRequiredWarningtxt = By.xpath("//div[@class='oxd-form-row'][2]/descendant::span");
 	By forgotPasswordLink = By.xpath("//div[@class='orangehrm-login-forgot']/p");
+	By logoImage = By.xpath("//div[@class='orangehrm-login-branding']/img[contains(@src,'/web/images/ohrm_branding.png?v=1711595107870')]");
 
 
 	public OrangeHRM_loginPage(WebDriver ldriver) throws IOException {
@@ -48,6 +52,12 @@ public class OrangeHRM_loginPage  extends TestBase{
 
 	public void clickOnForgotPasswordLink() {
 		_driver.findElement(forgotPasswordLink).click();
+	}
+	
+	public boolean checkLogoAvaialbility() {
+		WebDriverWait wait = new WebDriverWait(_driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.invisibilityOfElementLocated(logoImage));
+		 return _driver.findElement(logoImage).isDisplayed();
 	}
 
 }

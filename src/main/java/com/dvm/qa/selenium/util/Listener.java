@@ -1,12 +1,17 @@
 package com.dvm.qa.selenium.util;
 import java.io.IOException;
 
+import org.openqa.selenium.WebDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
+import com.dvm.qa.selenium.testbase.WebdriverMgr;
+
 public class Listener implements ITestListener  {
 
+	 private WebDriver _driver;
+	 Takescreenshot takescreenshot;
 	
 
 	public void onFinish(ITestContext context) {
@@ -16,6 +21,8 @@ public class Listener implements ITestListener  {
 
 	public void onTestStart(ITestResult result) {
 
+		_driver = WebdriverMgr.get_driver();
+		takescreenshot = new Takescreenshot();
 		System.out.println(result.getMethod().getMethodName()+ " Test Started");
 	}
 
@@ -28,7 +35,7 @@ public class Listener implements ITestListener  {
 	public void onTestFailure(ITestResult result) {
 		System.out.println("Test Failed..");
 		try {
-			Takescreenshot.getScreenShot();
+			takescreenshot.getScreenShot(_driver);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

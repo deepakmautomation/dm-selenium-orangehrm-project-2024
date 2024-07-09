@@ -42,11 +42,10 @@ public class OrangeHRM_PIM_addEmployeePageTest {
 		pim = dashboard.clickOnPIM();
 		Assert.assertEquals(pim.getPIMHeaderText(), "PIM");
 		addemployee =  pim.clickOnAddEmployee();
-		personalDetails =  addemployee.enterEmployeeFullName("John17", "S", "Smith1", "John17", "Admin@123", "417");
-		Assert.assertEquals(personalDetails.getEmployeeName(), "John17 Smith1");
+		personalDetails =  addemployee.enterEmployeeFullName("John21", "S", "Smith1", "John21", "Admin@123", "417");
+		Assert.assertEquals(personalDetails.getEmployeeName(), "John2 Smith1");
 		dashboard.clickOnLogout();
 	}
-
 
 	@AfterMethod
 	public void tearDown() throws InterruptedException {

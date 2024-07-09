@@ -1,5 +1,7 @@
 package com.dvm.qa.selenium.testcases;
 
+import static org.testng.Assert.assertTrue;
+
 import java.io.IOException;
 import java.net.URISyntaxException;
 
@@ -24,6 +26,7 @@ public class OrangeHRM_loginPageTest {
 	OrangeHRM_loginPage loginpage;
 	OrangeHRM_dashboardPage dashboardpage;
 	Takescreenshot takescreenshot;
+	
 
 	@Parameters({"browserName"})
 	@BeforeMethod
@@ -31,7 +34,6 @@ public class OrangeHRM_loginPageTest {
 		testbase = new TestBase();
 		_driver = testbase.launchBrowser(browserName);
 		loginpage = new OrangeHRM_loginPage(_driver);
-		takescreenshot = new Takescreenshot(_driver);
 	}
 
 	@Test
@@ -44,6 +46,11 @@ public class OrangeHRM_loginPageTest {
 	public void verify_Orange_HRM_Login_with_Invalid_Credentials(String uname, String pwd) {
 		 dashboardpage = loginpage.login(uname, pwd);
 		 Assert.assertEquals(loginpage.getInvalidCredentialsWarningText(), "Invalid credentials");
+	}
+	
+	@Test
+	public void verify_Orange_hrm_logo_present() {
+		assertTrue(loginpage.checkLogoAvaialbility());
 	}
 
 	@AfterMethod
