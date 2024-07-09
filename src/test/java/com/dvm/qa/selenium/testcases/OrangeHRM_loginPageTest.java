@@ -8,7 +8,9 @@ import java.net.URISyntaxException;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -16,6 +18,7 @@ import com.dvm.qa.selenium.pages.OrangeHRM_dashboardPage;
 import com.dvm.qa.selenium.pages.OrangeHRM_loginPage;
 import com.dvm.qa.selenium.testbase.TestBase;
 import com.dvm.qa.selenium.util.DataProviderClass;
+import com.dvm.qa.selenium.util.ExtentReportcls;
 import com.dvm.qa.selenium.util.Takescreenshot;
 
 
@@ -26,8 +29,15 @@ public class OrangeHRM_loginPageTest {
 	OrangeHRM_loginPage loginpage;
 	OrangeHRM_dashboardPage dashboardpage;
 	Takescreenshot takescreenshot;
-	
+	ExtentReportcls exterepo;
 
+	@BeforeTest
+	public void reportSetup() {
+	exterepo = new ExtentReportcls();	
+	exterepo.getReport();
+	}
+	
+	
 	@Parameters({"browserName"})
 	@BeforeMethod
 	public void setup(String browserName) throws IOException, URISyntaxException {
@@ -55,6 +65,14 @@ public class OrangeHRM_loginPageTest {
 
 	@AfterMethod
 	public void tearDown() {
+		
 		_driver.quit();
 	}
+	
+	@AfterTest
+	public void reportgen() {
+		ExtentReportcls.extent.flush();
+	}
+	
+	
 }

@@ -14,6 +14,14 @@
           <include name="verifyAdminCanAddEmployee"/>
         </methods>
       </class> <!-- com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest -->
+      <class name="com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verify_Orange_hrm_logo_present"/>
+          <include name="setup"/>
+          <include name="reportSetup"/>
+        </methods>
+      </class> <!-- com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [dm_orangeHRM_selenium_automation_testing_suite] -->

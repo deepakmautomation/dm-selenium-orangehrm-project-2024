@@ -42,8 +42,8 @@ public class OrangeHRM_PIM_addEmployeePageTest {
 		pim = dashboard.clickOnPIM();
 		Assert.assertEquals(pim.getPIMHeaderText(), "PIM");
 		addemployee =  pim.clickOnAddEmployee();
-		personalDetails =  addemployee.enterEmployeeFullName("John21", "S", "Smith1", "John21", "Admin@123", "417");
-		Assert.assertEquals(personalDetails.getEmployeeName(), "John2 Smith1");
+		personalDetails =  addemployee.enterEmployeeFullName("Bob2", "S", "Smith1", "Bob2", "Admin@123", "422");
+		Assert.assertEquals(personalDetails.getEmployeeName(), "Bob1234 Smith1");
 		dashboard.clickOnLogout();
 	}
 

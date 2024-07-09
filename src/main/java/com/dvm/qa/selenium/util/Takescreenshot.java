@@ -10,13 +10,15 @@ import org.openqa.selenium.WebDriver;
 
 public class Takescreenshot {	
 	
+ static	String savepath;
+	
 	public void getScreenShot(WebDriver driver) throws IOException{
 		
 		TakesScreenshot takescreenshot = (TakesScreenshot)driver;
 		
 		File src = takescreenshot.getScreenshotAs(OutputType.FILE);
 		
-		String savepath = System.getProperty("user.dir")+"\\screenshots\\test"+"_"+TestUtil.getCurrentDateTime()+".png";
+		savepath = System.getProperty("user.dir")+"\\screenshots\\test"+"_"+TestUtil.getCurrentDateTime()+".png";
 		
 		File dest = new File(savepath);
 		
