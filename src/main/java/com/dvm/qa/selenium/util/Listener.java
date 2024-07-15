@@ -48,6 +48,7 @@ public class Listener implements ITestListener  {
 			test.assignCategory("Funcational Test");
 			test.assignDevice("windows");
 			test.log(Status.FAIL, "Failed");
+			test.log(Status.FAIL, result.getThrowable());
 			test.addScreenCaptureFromPath(Takescreenshot.savepath);
 		} catch (IOException e) {
 			e.printStackTrace();

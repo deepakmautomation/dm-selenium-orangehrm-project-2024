@@ -60,13 +60,12 @@ public class OrangeHRM_loginPageTest {
 	}
 	
 	@Test
-	public void verify_Orange_hrm_logo_present() {
+	public void verify_Orange_hrm_logo_present() throws InterruptedException {
 		assertTrue(loginpage.checkLogoAvaialbility());
 	}
 
 	@AfterMethod
 	public void tearDown() {
-		
 		_driver.quit();
 	}
 	

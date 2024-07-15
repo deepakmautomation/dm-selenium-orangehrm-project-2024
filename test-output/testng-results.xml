@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-09T16:45:34 IST" name="dm_orangeHRM_selenium_automation_testing_suite" finished-at="2024-07-09T16:47:03 IST" duration-ms="88467">
+  <suite started-at="2024-07-16T00:18:36 IST" name="dm_orangeHRM_selenium_automation_testing_suite" finished-at="2024-07-16T00:20:17 IST" duration-ms="101734">
     <groups>
     </groups>
-    <test started-at="2024-07-09T16:45:34 IST" name="ChromeTest" finished-at="2024-07-09T16:47:03 IST" duration-ms="88467">
+    <test started-at="2024-07-16T00:18:36 IST" name="ChromeTest" finished-at="2024-07-16T00:20:17 IST" duration-ms="101734">
       <class name="com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest@6771beb3]" started-at="2024-07-09T16:46:14 IST" name="setUp" finished-at="2024-07-09T16:46:19 IST" duration-ms="5649" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest@2b71e916]" started-at="2024-07-16T00:19:12 IST" name="setUp" finished-at="2024-07-16T00:19:17 IST" duration-ms="4677" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,59 +18,17 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyAdminCanAddEmployee()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest@6771beb3]" started-at="2024-07-09T16:46:19 IST" name="verifyAdminCanAddEmployee" finished-at="2024-07-09T16:46:56 IST" duration-ms="36644" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Bob Smith1] but found [Bob1 Smith1]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Bob Smith1] but found [Bob1 Smith1]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest.verifyAdminCanAddEmployee(OrangeHRM_PIM_addEmployeePageTest.java:46)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verifyAdminCanAddEmployee()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest@2b71e916]" started-at="2024-07-16T00:19:17 IST" name="verifyAdminCanAddEmployee" finished-at="2024-07-16T00:19:54 IST" duration-ms="36437" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyAdminCanAddEmployee -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest@6771beb3]" started-at="2024-07-09T16:46:56 IST" name="tearDown" finished-at="2024-07-09T16:46:57 IST" duration-ms="709" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest@2b71e916]" started-at="2024-07-16T00:19:54 IST" name="tearDown" finished-at="2024-07-16T00:19:54 IST" duration-ms="620" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest -->
-      <class name="com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest@51399530]" started-at="2024-07-09T16:46:57 IST" name="setUp" finished-at="2024-07-09T16:47:01 IST" duration-ms="3985" status="PASS">
+      <class name="com.dvm.qa.selenium.testcases.OrangeHRM_PIM_viewEmployeeListPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_PIM_viewEmployeeListPageTest@36fc695d]" started-at="2024-07-16T00:19:54 IST" name="setUp" finished-at="2024-07-16T00:19:59 IST" duration-ms="4602" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -81,21 +39,42 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="verifyResetPasswordHeader()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest@51399530]" started-at="2024-07-09T16:47:01 IST" name="verifyResetPasswordHeader" finished-at="2024-07-09T16:47:02 IST" duration-ms="1184" status="PASS">
+        <test-method signature="verify_that_the_admin_can_be_able_to_search_the_employee()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_PIM_viewEmployeeListPageTest@36fc695d]" started-at="2024-07-16T00:19:59 IST" name="verify_that_the_admin_can_be_able_to_search_the_employee" finished-at="2024-07-16T00:20:10 IST" duration-ms="11114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_that_the_admin_can_be_able_to_search_the_employee -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_PIM_viewEmployeeListPageTest@36fc695d]" started-at="2024-07-16T00:20:10 IST" name="tearDown" finished-at="2024-07-16T00:20:10 IST" duration-ms="557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.dvm.qa.selenium.testcases.OrangeHRM_PIM_viewEmployeeListPageTest -->
+      <class name="com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest@28701274]" started-at="2024-07-16T00:20:10 IST" name="setUp" finished-at="2024-07-16T00:20:15 IST" duration-ms="4688" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyResetPasswordHeader()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest@28701274]" started-at="2024-07-16T00:20:15 IST" name="verifyResetPasswordHeader" finished-at="2024-07-16T00:20:16 IST" duration-ms="1058" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyResetPasswordHeader -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest@51399530]" started-at="2024-07-09T16:47:02 IST" name="tearDown" finished-at="2024-07-09T16:47:03 IST" duration-ms="737" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest@28701274]" started-at="2024-07-16T00:20:16 IST" name="tearDown" finished-at="2024-07-16T00:20:17 IST" duration-ms="596" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest -->
       <class name="com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest">
-        <test-method is-config="true" signature="reportSetup()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@639c2c1d]" started-at="2024-07-09T16:45:34 IST" name="reportSetup" finished-at="2024-07-09T16:45:35 IST" duration-ms="208" status="PASS">
+        <test-method is-config="true" signature="reportSetup()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:18:36 IST" name="reportSetup" finished-at="2024-07-16T00:18:36 IST" duration-ms="214" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- reportSetup -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@639c2c1d]" started-at="2024-07-09T16:45:35 IST" name="setup" finished-at="2024-07-09T16:45:40 IST" duration-ms="5262" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:18:36 IST" name="setup" finished-at="2024-07-16T00:18:41 IST" duration-ms="5532" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,15 +85,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_OrangeHRM_Login_with_valid_credentials()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@639c2c1d]" started-at="2024-07-09T16:45:40 IST" name="verify_OrangeHRM_Login_with_valid_credentials" finished-at="2024-07-09T16:45:42 IST" duration-ms="2103" status="PASS">
+        <test-method signature="verify_OrangeHRM_Login_with_valid_credentials()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:18:41 IST" name="verify_OrangeHRM_Login_with_valid_credentials" finished-at="2024-07-16T00:18:44 IST" duration-ms="2438" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_OrangeHRM_Login_with_valid_credentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@639c2c1d]" started-at="2024-07-09T16:45:42 IST" name="tearDown" finished-at="2024-07-09T16:45:43 IST" duration-ms="1407" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:18:44 IST" name="tearDown" finished-at="2024-07-16T00:18:44 IST" duration-ms="498" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@639c2c1d]" started-at="2024-07-09T16:45:43 IST" name="setup" finished-at="2024-07-09T16:45:49 IST" duration-ms="5131" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:18:44 IST" name="setup" finished-at="2024-07-16T00:18:49 IST" duration-ms="4616" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -125,7 +104,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Orange_HRM_Login_with_Invalid_Credentials(java.lang.String,java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@639c2c1d]" started-at="2024-07-09T16:45:49 IST" name="verify_Orange_HRM_Login_with_Invalid_Credentials" data-provider="dataProvidertest" finished-at="2024-07-09T16:45:51 IST" duration-ms="2104" status="PASS">
+        <test-method signature="verify_Orange_HRM_Login_with_Invalid_Credentials(java.lang.String,java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:18:49 IST" name="verify_Orange_HRM_Login_with_Invalid_Credentials" data-provider="dataProvidertest" finished-at="2024-07-16T00:18:51 IST" duration-ms="1971" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -141,11 +120,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Orange_HRM_Login_with_Invalid_Credentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@639c2c1d]" started-at="2024-07-09T16:45:51 IST" name="tearDown" finished-at="2024-07-09T16:45:51 IST" duration-ms="682" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:18:51 IST" name="tearDown" finished-at="2024-07-16T00:18:51 IST" duration-ms="592" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@639c2c1d]" started-at="2024-07-09T16:45:51 IST" name="setup" finished-at="2024-07-09T16:45:56 IST" duration-ms="4519" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:18:51 IST" name="setup" finished-at="2024-07-16T00:18:56 IST" duration-ms="4716" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -156,7 +135,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Orange_HRM_Login_with_Invalid_Credentials(java.lang.String,java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@639c2c1d]" started-at="2024-07-09T16:45:56 IST" name="verify_Orange_HRM_Login_with_Invalid_Credentials" data-provider="dataProvidertest" finished-at="2024-07-09T16:45:57 IST" duration-ms="1599" status="PASS">
+        <test-method signature="verify_Orange_HRM_Login_with_Invalid_Credentials(java.lang.String,java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:18:56 IST" name="verify_Orange_HRM_Login_with_Invalid_Credentials" data-provider="dataProvidertest" finished-at="2024-07-16T00:18:58 IST" duration-ms="1734" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -172,11 +151,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Orange_HRM_Login_with_Invalid_Credentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@639c2c1d]" started-at="2024-07-09T16:45:57 IST" name="tearDown" finished-at="2024-07-09T16:45:58 IST" duration-ms="530" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:18:58 IST" name="tearDown" finished-at="2024-07-16T00:18:59 IST" duration-ms="701" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@639c2c1d]" started-at="2024-07-09T16:45:58 IST" name="setup" finished-at="2024-07-09T16:46:03 IST" duration-ms="4926" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:18:59 IST" name="setup" finished-at="2024-07-16T00:19:03 IST" duration-ms="4785" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -187,7 +166,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Orange_HRM_Login_with_Invalid_Credentials(java.lang.String,java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@639c2c1d]" started-at="2024-07-09T16:46:03 IST" name="verify_Orange_HRM_Login_with_Invalid_Credentials" data-provider="dataProvidertest" finished-at="2024-07-09T16:46:06 IST" duration-ms="2834" status="PASS">
+        <test-method signature="verify_Orange_HRM_Login_with_Invalid_Credentials(java.lang.String,java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:19:03 IST" name="verify_Orange_HRM_Login_with_Invalid_Credentials" data-provider="dataProvidertest" finished-at="2024-07-16T00:19:05 IST" duration-ms="2039" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -203,11 +182,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Orange_HRM_Login_with_Invalid_Credentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@639c2c1d]" started-at="2024-07-09T16:46:06 IST" name="tearDown" finished-at="2024-07-09T16:46:06 IST" duration-ms="755" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:19:05 IST" name="tearDown" finished-at="2024-07-16T00:19:06 IST" duration-ms="713" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@639c2c1d]" started-at="2024-07-09T16:46:06 IST" name="setup" finished-at="2024-07-09T16:46:12 IST" duration-ms="5621" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:19:06 IST" name="setup" finished-at="2024-07-16T00:19:11 IST" duration-ms="4672" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -218,54 +197,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_Orange_hrm_logo_present()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@639c2c1d]" started-at="2024-07-09T16:46:12 IST" name="verify_Orange_hrm_logo_present" finished-at="2024-07-09T16:46:13 IST" duration-ms="730" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1578)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at org.testng.Assert.assertTrue(Assert.java:67)
-at com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest.verify_Orange_hrm_logo_present(OrangeHRM_loginPageTest.java:63)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:819)
-at org.testng.TestRunner.run(TestRunner.java:619)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
-at org.testng.SuiteRunner.run(SuiteRunner.java:336)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
-at org.testng.TestNG.runSuites(TestNG.java:1134)
-at org.testng.TestNG.run(TestNG.java:1101)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="verify_Orange_hrm_logo_present()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:19:11 IST" name="verify_Orange_hrm_logo_present" finished-at="2024-07-16T00:19:12 IST" duration-ms="938" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Orange_hrm_logo_present -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@639c2c1d]" started-at="2024-07-09T16:46:13 IST" name="tearDown" finished-at="2024-07-09T16:46:14 IST" duration-ms="680" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:19:12 IST" name="tearDown" finished-at="2024-07-16T00:19:12 IST" duration-ms="688" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="reportgen()[pri:0, instance:com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest@74235045]" started-at="2024-07-16T00:20:17 IST" name="reportgen" finished-at="2024-07-16T00:20:17 IST" duration-ms="470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportgen -->
       </class> <!-- com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest -->
     </test> <!-- ChromeTest -->
   </suite> <!-- dm_orangeHRM_selenium_automation_testing_suite -->

@@ -51,11 +51,11 @@ public class OrangeHRM_loginPage  extends TestBase{
 	public void clickOnForgotPasswordLink() {
 		_driver.findElement(forgotPasswordLink).click();
 	}
-	
-	public boolean checkLogoAvaialbility() {
-		WebDriverWait wait = new WebDriverWait(_driver, Duration.ofSeconds(30));
-		wait.until(ExpectedConditions.invisibilityOfElementLocated(logoImage));
-		 return _driver.findElement(logoImage).isDisplayed();
+
+	public boolean checkLogoAvaialbility() throws InterruptedException {
+		WebDriverWait wait = new WebDriverWait(_driver, Duration.ofSeconds(60));
+		wait.until(ExpectedConditions.visibilityOfElementLocated(logoImage));
+		return _driver.findElement(logoImage).isDisplayed();
 	}
 
 }

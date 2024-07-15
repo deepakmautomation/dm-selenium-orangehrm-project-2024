@@ -17,6 +17,7 @@ import com.dvm.qa.selenium.pages.OrangeHRM_PIM_viewPersonalDetailsPage;
 import com.dvm.qa.selenium.pages.OrangeHRM_dashboardPage;
 import com.dvm.qa.selenium.pages.OrangeHRM_loginPage;
 import com.dvm.qa.selenium.testbase.TestBase;
+import com.dvm.qa.selenium.util.TestUtil;
 
 public class OrangeHRM_PIM_addEmployeePageTest {
 
@@ -42,8 +43,15 @@ public class OrangeHRM_PIM_addEmployeePageTest {
 		pim = dashboard.clickOnPIM();
 		Assert.assertEquals(pim.getPIMHeaderText(), "PIM");
 		addemployee =  pim.clickOnAddEmployee();
-		personalDetails =  addemployee.enterEmployeeFullName("Bob2", "S", "Smith1", "Bob2", "Admin@123", "422");
-		Assert.assertEquals(personalDetails.getEmployeeName(), "Bob1234 Smith1");
+		personalDetails =  addemployee.enterEmployeeFullName(
+				TestBase.prop.getProperty("firstname"),
+				TestBase.prop.getProperty("middlename"),
+				TestBase.prop.getProperty("lastname"),
+				TestBase.prop.getProperty("empuname")+TestUtil.generateRandomeString(5),
+				TestBase.prop.getProperty("emppwd"),
+				TestBase.prop.getProperty("empid")
+				);
+		Assert.assertEquals(personalDetails.getEmployeeName(), TestBase.prop.getProperty("firstname")+" "+TestBase.prop.getProperty("lastname"));
 		dashboard.clickOnLogout();
 	}
 

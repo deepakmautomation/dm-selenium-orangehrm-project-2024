@@ -7,21 +7,13 @@
   <test thread-count="5" name="ChromeTest(failed)">
     <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest">
+      <class name="com.dvm.qa.selenium.testcases.OrangeHRM_PIM_viewEmployeeListPageTest">
         <methods>
-          <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="verifyAdminCanAddEmployee"/>
-        </methods>
-      </class> <!-- com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest -->
-      <class name="com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest">
-        <methods>
+          <include name="verify_that_the_admin_can_be_able_to_search_the_employee"/>
           <include name="tearDown"/>
-          <include name="verify_Orange_hrm_logo_present"/>
-          <include name="setup"/>
-          <include name="reportSetup"/>
         </methods>
-      </class> <!-- com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest -->
+      </class> <!-- com.dvm.qa.selenium.testcases.OrangeHRM_PIM_viewEmployeeListPageTest -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [dm_orangeHRM_selenium_automation_testing_suite] -->
