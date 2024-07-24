@@ -10,6 +10,7 @@
       <class name="com.dvm.qa.selenium.testcases.OrangeHRM_PIM_viewEmployeeListPageTest">
         <methods>
           <include name="setUp"/>
+          <include name="verify_that_admin_can_delete_employee"/>
           <include name="verify_that_the_admin_can_be_able_to_search_the_employee"/>
           <include name="tearDown"/>
         </methods>

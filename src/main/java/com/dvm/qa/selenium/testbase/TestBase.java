@@ -27,7 +27,7 @@ public class TestBase {
 	public static Properties prop;
 
 	private String username = "deepakmautomation";
-	private String accesskey = "UZ6pvFLx448XrjB1V2ixZjnnjY2pMxZT0sjMLStgze52zqix9Y";
+	private String accesskey = "HPanhk9SYiT55ng16Cmi9HVIrZAOSOGT5LSjrWYZcktjRM9i2C";
 
 	public TestBase() throws IOException  {
 
@@ -53,7 +53,7 @@ public class TestBase {
 					browserOptions.setBrowserVersion("126");
 					HashMap<String, Object> ltOptions = new HashMap<String, Object>();
 					ltOptions.put("video", true);
-					ltOptions.put("build", "Build-upload-image-dm-selenium-orangehrm-project-2024");
+					ltOptions.put("build", "Build_search_employee-dm-selenium-orangehrm-project-2024");
 					ltOptions.put("project", "dm-selenium-orangehrm-project-2024");
 					ltOptions.put("name", "Test-dm-selenium-orangehrm-project-2024");
 					ltOptions.put("w3c", true);

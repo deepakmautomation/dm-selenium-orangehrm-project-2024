@@ -52,10 +52,24 @@ public class OrangeHRM_PIM_viewEmployeeListPageTest {
 
 	}
 
+	@Test(dependsOnMethods = "verify_that_the_admin_can_be_able_to_search_the_employee")
+	public void verify_that_admin_can_delete_employee() throws InterruptedException {
+		dashboardpage = loginpage.login(TestBase.prop.getProperty("username"), TestBase.prop.getProperty("password"));
+		PIMpage =  dashboardpage.clickOnPIM();
+		viewemployee =  PIMpage.clickOnEmployeeList();
+		viewemployee.enterEmpId();
+		viewemployee.clickOnSearchButton();
+		viewemployee.clickOnDeleteAction();
+		viewemployee.confirmDelete("YES");
+		Assert.assertEquals(viewemployee.getToastMessage(), "Successfully Deleted");
+		viewemployee.enterEmpId();
+		viewemployee.clickOnSearchButton();
+		Assert.assertEquals(viewemployee.getToastMessage(), "No Records Found");
+	}
+
 	@AfterMethod
 	public void tearDown() {
 		_driver.quit();
 	}
-
 
 }

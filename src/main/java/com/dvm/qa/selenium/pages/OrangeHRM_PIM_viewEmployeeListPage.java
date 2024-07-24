@@ -18,8 +18,12 @@ public class OrangeHRM_PIM_viewEmployeeListPage {
 	By employeeNameHint = By.xpath("(//div[@class='oxd-autocomplete-wrapper'])[1]/descendant::input");
 	By searchBtn = By.xpath("//div[@class='oxd-form-actions']/child::button[@type='submit']");
 	By editAction = By.xpath("//div[@class='oxd-table-cell-actions']/child::button[2]");
+	By deleteAction = By.xpath("//div[@class='oxd-table-cell-actions']/child::button[1]");
 	By searchId = By.xpath("(//div[@class='oxd-input-group__label-wrapper'])[2]/following-sibling::div/child::input");
 	By row = By.xpath("//div[@class='oxd-table-card']");
+	By deleteYesBtn = By.xpath("//div[@class='orangehrm-modal-footer']/child::button[2]");
+	By deleteNoBtn = By.xpath("//div[@class='orangehrm-modal-footer']/child::button[1]");
+	By toastMessage = By.xpath("//div[@class='oxd-toast-start']/child::div[2]/child::p[2]");
 
 	public OrangeHRM_PIM_viewEmployeeListPage(WebDriver vdriver) {
 		this._driver = vdriver;
@@ -32,6 +36,7 @@ public class OrangeHRM_PIM_viewEmployeeListPage {
 
 	public void clickOnSearchButton() throws InterruptedException {
 		_driver.findElement(searchBtn).click();
+		Thread.sleep(3000);
 	}
 
 	public void enterEmpId() {
@@ -39,7 +44,7 @@ public class OrangeHRM_PIM_viewEmployeeListPage {
 	}
 
 	public OrangeHRM_PIM_viewPersonalDetailsPage clickOnEditAction() throws InterruptedException {
-		
+
 		WebDriverWait wait= new WebDriverWait(_driver, Duration.ofSeconds(30));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(row));
 
@@ -60,6 +65,33 @@ public class OrangeHRM_PIM_viewEmployeeListPage {
 
 		}
 		return new OrangeHRM_PIM_viewPersonalDetailsPage(_driver);
+	}
+
+	public void clickOnDeleteAction() {
+
+		List<WebElement> idstodelete = _driver.findElements(By.xpath("//div[@class='oxd-table-card']/child::div/child::div[2]/child::div"));
+
+		for(int i =0;i<idstodelete.size();i++) {
+
+			if(idstodelete.get(i).getText().contains(TestBase.prop.getProperty("empid"))) {
+				_driver.findElement(deleteAction).click();
+
+				break;
+			}
+		}
+	}
+
+	public void confirmDelete(String status) {
+		if(status.equalsIgnoreCase("yes")){
+			_driver.findElement(deleteYesBtn).click();	
+		}else {
+			_driver.findElement(deleteNoBtn).click();
+		}
+
+	}
+	
+	public String getToastMessage() {
+		 return _driver.findElement(toastMessage).getText();
 	}
 }
 

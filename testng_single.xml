@@ -10,7 +10,7 @@
       <class name="com.dvm.qa.selenium.testcases.OrangeHRM_loginPageTest"/>
       <class name="com.dvm.qa.selenium.testcases.OrangeHRM_PIM_addEmployeePageTest"></class>
       <class name="com.dvm.qa.selenium.testcases.OrangeHRM_PIM_viewEmployeeListPageTest"></class>
-       <class name="com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest"></class>
+      <class name="com.dvm.qa.selenium.testcases.OrangeHRM_ResetPasswordPageTest"></class>
     </classes>
   </test> 
 </suite> 
